@@ -7,7 +7,7 @@ If you make more than 10 moves one star will be removed, and more that 20 moves 
 ## How the game works: 
 -You need to match the cards in less time with less moves.<br>
 -There are eight pairs of cards on the game board<br>
--Click on one of the cards and it will show an icon<br><br>
+-Click on one of the cards and it will show an icon<br>
 -Click on another card to find the matching icon<br>
 -If it matches it will turn the same colour green<br>
 -If the cards doesn't match it will be flipped on their back again<br>
