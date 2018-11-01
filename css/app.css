@@ -1,0 +1,185 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('../img/Purple-Pink-Green.png');
+    background-size: cover;
+    background-repeat: none; 
+    background-position: center; 
+    font-family: 'Coda', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Caveat Brush', cursive;
+    font-weight: 300;
+    color: #ffffff; 
+    font-size: 4.5rem; 
+}
+
+.modal--title {
+    font-family: 'Caveat Brush', cursive;
+    font-weight: 300;
+    color: #ffffff; 
+    font-size: 4rem; 
+}
+
+.modalbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.438); 
+}
+
+.modalbody {
+    position: relative;
+    width: 500px; 
+    top: 50%;
+    left: 50%;
+    background: linear-gradient(90deg, #f809ea 0%, #1cf0c9 100%); 
+    transform: translate(-50%, -70%); 
+}
+
+.modal__heading {
+    text-align: center;
+    padding: 1rem; 
+    border-bottom: 5px solid #f809ea;
+}
+
+.modal--close {
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;  
+}
+
+.modal__stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem; 
+    border-bottom: 5px solid #1cf0c9; 
+    font-family: 'Caveat Brush', cursive;
+    font-size: 2rem;
+    color: #ffffff; 
+}
+
+.modal__buttons {
+    display: flex; 
+    justify-content: space-around;
+    padding: 2rem; 
+    font-family: 'Caveat Brush', cursive;
+}
+
+.modal__button {
+    width: 80px; 
+    height: 50px;  
+    background-color: #b37ee2;
+    color: white;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 20px;  
+}
+
+.hide {
+    display: none; 
+}
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+    width: 660px;
+    min-height: 680px;
+    background: linear-gradient(160deg, #f809ea 0%, #1cf0c9 100%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    background: #b37ee2;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+    transform: rotateY(0);
+    background: #f70aea;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 33px;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #44c6cf;
+    font-size: 33px;
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    text-align: left;
+    width: 345px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-family: 'Caveat Brush', cursive; 
+    font-size: 30px; 
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+}
